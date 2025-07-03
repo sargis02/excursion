@@ -1,0 +1,189 @@
+/* General Styling */
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 0 10px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+/* Mission Section */
+.mission-section {
+    background-image: url('images/mission-background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 69px; /* To account for fixed header */
+}
+
+.mission-content {
+    background-color: black;
+    opacity: 0.9;
+    width: 1200px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-content h2,
+.mission-content h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Featured Tea Section */
+.featured-tea-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0; /* Adjusted from 50px based on spec to give more space */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-tea-section h2,
+.featured-tea-section h4 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.tea-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between items */
+    margin-top: 30px; /* Space between text and images */
+}
+
+.tea-item {
+    text-align: center;
+    width: 300px; /* Each item is 300px wide */
+}
+
+.tea-item img {
+    width: 100%; /* Make images fill their container */
+    height: 200px;
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    margin-bottom: 10px;
+}
+
+.tea-item h3 {
+    margin: 0;
+}
+
+/* Locations Section */
+.locations-section {
+    background-image: url('images/locations-background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.locations-section h2 {
+    margin-bottom: 20px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 10px 20px;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between location cards */
+    width: 100%; /* Ensure cards are centered within section */
+    max-width: 1000px; /* Limit overall width if needed */
+}
+
+.location-card {
+    background-color: black;
+    opacity: 0.9;
+    width: 300px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.location-card p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left as per spec */
+    padding-left: 20px; /* 20px from the left */
+    height: 200px;
+    justify-content: center;
+}
+
+.footer-content {
+    text-align: left;
+    margin-bottom: 10px; /* Space between contact info and copyright */
+}
+
+.footer-content h2,
+.footer-content h5 {
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px; /* Smaller font for copyright */
+}
